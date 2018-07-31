@@ -1,0 +1,146 @@
+body {
+	text-align: center;
+	list-style: inside;
+	font-weight: bolder;
+	font-family: sans-serif;
+	color: #F77D00;
+}
+
+h1 {
+	font-size: 5em;
+	margin-bottom: 0px;
+
+}
+
+.header {
+	font-weight: bolder;
+	font-family: sans-serif;
+	color: red;
+	background-color: maroon;
+	padding-top: .75em;
+	padding-bottom: .75em;
+	background-image: url("https://images.pexels.com/photos/326243/pexels-photo-326243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+}
+
+/* Styles the main navigation */
+
+.top_nav {
+	background-color: #530000;
+	padding: 20px;
+	position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    margin-bottom: 0px;
+    color: #F77D00;
+}
+.top_nav ul{
+
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.top_nav li{
+
+	display: inline;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: #530000;
+	border: none;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.top_nav li:hover{
+
+    background-color: red;
+
+}
+.top_nav li:active{
+
+    background-color: #A70000;
+
+}
+.top_nav a {
+	color: inherit;
+}
+
+a {
+
+	color: inherit;
+}
+/* Styles the main content */
+
+#main {
+	height: 400px;
+	overflow: hidden;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles the columns */
+ 
+.column_container {
+	display: table;
+    width: 100%;
+    border-spacing: 15px;
+}
+
+.column {
+	width: 30%;
+	display: inline-block;
+	background-color: rgb(128,0,0, 0.5);
+	color: #F77D00;
+	padding: 1em;
+	margin-bottom: 1em;
+	display: table-cell;
+}
+.column_title {
+
+	font-size: 2em;
+}
+/* Styles the footer */
+.footer {
+		background-color: rgb(128,0,0, 0.9);
+		padding: 10px 10px;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 0px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .top_nav li {
+    	display: block;
+    	overflow: hidden;
+    }
+    .top_nav {
+    	position: static;
+    }
+    .column {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .column_container {
+    	border-spacing: 0px;
+    }
+}
+
+/* On screens that are 992px wide or less, change top nav to vertical*/
+@media screen and (max-width: 1080px) {
+
+    .top_nav li {
+    	display: block;
+    	overflow: hidden;
+    }
+    .top_nav {
+    	position: static;
+    }
+}
